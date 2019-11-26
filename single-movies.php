@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+
 <div class="container pt-5 pb-5">
     <h1>single-movie.php</h1>
     <h1><?php the_title(); ?></h1>
@@ -6,4 +7,5 @@
         <?php the_content(); ?>
     <?php endwhile; endif; ?>
 </div>
+
 <?php get_footer(); ?>

@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+
 <div class="container pt-5 pb-5">
     <h1>front_page.php</h1>
     <div class="row">
@@ -24,7 +25,7 @@
                     '_builtin' => false
                 );
                 foreach ( get_post_types( $args, 'objects', 'and' ) as $post_type ) {
-                    echo '<a href="' . get_site_url() . '/?post_type=' . $post_type->name . '">' . $post_type->name . '</a><br>';
+                    echo '<a href="' . get_site_url() . '/' . $post_type->name . '">' . $post_type->name . '</a><br>';
                 }
             ?>
         </div>
