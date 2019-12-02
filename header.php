@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <?php wp_enqueue_script("jquery"); ?>
         <?php wp_head(); ?>
     </head>
     <body <?php body_class(); ?>>
